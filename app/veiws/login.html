@@ -1,0 +1,124 @@
+
+<!--
+            *************************************************************************************
+            STYLE FOR ONLY LOGIN PAGE
+            ***************************************************************************************
+-->
+<style>
+    input, textarea {
+        font-size: 22px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 5px 10px;
+        background: none;
+        background-image: none;
+        border: 1px solid #a0b3b0;
+        color: #a0b3b0;
+        border-radius: 0;
+        -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+        transition: border-color .25s ease, box-shadow .25s ease;
+    }
+
+    .sidebar-toggle-box {
+        display: none !important;
+    }
+</style>
+
+<section class="page-login">
+    <section class="wrapper" ng-style="div-overflow">
+        <div class="form" ng-init="loginDiv=1; signupDiv=0;errorDiv=0;">
+
+            <!--
+            *************************************************************************************
+            TAB FOR SELECTING SIGN-UP FORM / LOGIN FORM  ..
+            ***************************************************************************************
+            -->
+
+            <ul class="tab-group">
+                <div ng-show="errorDiv" class="alert button button-block">{{errorBox}}</div>
+                <li class="tab" ng-class="signupDiv==0 ? 'active':'';">
+                    <div ng-click="signupDiv=0;loginDiv=1;">
+                        log in
+                    </div>
+                </li>
+                <li class="tab" ng-class="signupDiv==1 ? 'active':'';">
+                    <div ng-click="signupDiv=1; loginDiv=0;">
+                        Sign Up
+                    </div>
+                </li>
+            </ul>
+
+            <!--
+            *************************************************************************************
+            FORM FOR LOGIN EXISTING USER..
+            ***************************************************************************************
+            -->
+
+            <form ng-show="loginDiv" name="form_login">
+                <div class="tab-content">
+                    <div class="field-wrap">
+                        <input type="text" placeholder="USERNAME" ng-model="Login_userName" required>
+                    </div>
+                    <div class="field-wrap">
+                        <input type="password" placeholder="PASSWORD" ng-model="Login_userPassword" required>
+                    </div>
+                    <ul class="tab-group">
+                        <div>
+                            <input class="button button-block" type="submit" value="log in "  ng-click="logIn();errorDiv=1; ">
+                        </div>
+                    </ul>
+                </div>
+            </form>
+
+            <!--
+            *************************************************************************************
+            FORM FOR SIGN UP NEW USER..
+            ***************************************************************************************
+            -->
+
+            <form ng-show="signupDiv" name="form_submit">
+                <div class="tab-content">
+                    <div class="field-wrap">
+                        <input type="text" placeholder="USERNAME" ng-model="Signup_userName" required>
+                    </div>
+                    <div class="field-wrap">
+                        <input type="password" id="password" placeholder="PASSWORD" ng-model="Signup_userPassword"  required>
+                    </div>
+                    <div class="field-wrap" ng-show="signupDiv">
+                        <input type="password" id="confirm_password" placeholder="RE-PASSWORD" ng-model="Signup_userCPassword" required>
+                    </div>
+                    <div class="field-wrap" ng-show="signupDiv">
+                        <input type="email" placeholder="your@email.com" ng-model="Signup_userEmailID" required>
+                    </div>
+                    <ul class="tab-group" ng-init="">
+                        <div>
+                            <input class="button button-block" type="submit" value="sign up "  ng-click="signUpValidation();errorDiv=1; ">
+                        </div>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </section>
+</section>
+
+<!--
+*************************************************************************************
+SCRIPT FOR PASSWORD AND RE-PASSWORD VERIFICATION
+***************************************************************************************
+-->
+<script>
+    var password = document.getElementById("password")
+            , confirm_password = document.getElementById("confirm_password");
+
+    function validatePassword() {
+        if (password.value != confirm_password.value) {
+            confirm_password.setCustomValidity("Passwords Don't Match");
+        } else {
+            confirm_password.setCustomValidity('');
+        }
+    }
+
+    password.onchange = validatePassword;
+    confirm_password.onkeyup = validatePassword;
+</script>

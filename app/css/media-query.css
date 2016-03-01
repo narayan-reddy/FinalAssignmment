@@ -1,0 +1,2184 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    .wrapper{
+        display: block;
+        width: 100%;
+        margin: 0 auto 200px;
+    }
+
+    .navigator {
+
+    }
+
+    div{
+        display: block;
+    }
+
+    .navigator ul li{
+        float: none;
+        width: 237px;
+    }
+
+    .header {
+        background: #bbbdff url("../images/icon.jpg") no-repeat;
+        background-size: 100% 100%;
+        height: 100px;
+    }
+
+    .category-details .small-image{
+        display: block;
+    }
+
+    .category-details .big-image{
+        display: none;
+    }
+
+    .category-details .story{
+        display: block;
+        font-size: 0.9em;
+        color: gold;
+    }
+
+    .category-details .caption{
+        display: block;
+        font-size: 1em;
+        color: chartreuse;
+    }
+
+    .category-details .keywords{
+        display: block;
+        float: left;
+        font-size: 0.9em;
+        color: fuchsia;
+    }
+
+    .category-details .dateNTime{
+        display: block;
+        float: right;
+        font-size: 0.8em;
+        color: #0088FF;
+    }
+
+    .category-details .heading{
+        display: block;
+        font-size: 1.2em;
+        color: honeydew;
+        text-transform: uppercase;
+    }
+
+    .clear
+    {
+        clear: both;
+    }
+
+    .footer {
+        background: #bbbdff;
+        height: 200px;
+    }
+
+    .absolute
+    {
+        position: absolute;
+    }
+
+    .dropbtn {
+        background-color: #4CAF50;
+        display: block;
+        color: white;
+        width: 300px;
+        text-align: center;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        margin: 0 40px;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .category-details{
+        width: 95%;
+        padding: 5px;
+        margin: 5px 0;
+    }
+
+    .dropdown-content li {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content li:hover {
+        background: #ff5cd0;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+
+    /* End: Recommended Isotope styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    .wrapper{
+        display: block;
+        width: 100%;
+        margin: 0 auto 200px;
+    }
+
+    .navigator {
+
+    }
+
+    div{
+        display: block;
+    }
+
+    .navigator ul li{
+        float: none;
+        width: 237px;
+    }
+
+    .header {
+        background: #bbbdff url("../images/icon.jpg") no-repeat;
+        background-size: 100% 100%;
+        height: 100px;
+    }
+
+    .category-details .small-image{
+        display: block;
+    }
+
+    .category-details .big-image{
+        display: none;
+    }
+
+    .category-details .story{
+        display: block;
+        font-size: 0.9em;
+        color: gold;
+    }
+
+    .category-details .caption{
+        display: block;
+        font-size: 1em;
+        color: chartreuse;
+    }
+
+    .category-details .keywords{
+        display: block;
+        float: left;
+        font-size: 0.9em;
+        color: fuchsia;
+    }
+
+    .category-details .dateNTime{
+        display: block;
+        float: right;
+        font-size: 0.8em;
+        color: #0088FF;
+    }
+
+    .category-details .heading{
+        display: block;
+        font-size: 1.2em;
+        color: honeydew;
+        text-transform: uppercase;
+    }
+
+    .clear
+    {
+        clear: both;
+    }
+
+    .footer {
+        background: #bbbdff;
+        height: 200px;
+    }
+
+    .absolute
+    {
+        position: absolute;
+    }
+
+    .dropbtn {
+        background-color: #4CAF50;
+        display: block;
+        color: white;
+        width: 300px;
+        text-align: center;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        margin: 0;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .category-details{
+        width: 95%;
+        padding: 5px;
+        margin: 5px 0;
+    }
+
+    .dropdown-content li {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content li:hover {
+        background: #ff5cd0;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+    /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* app css stylesheet */
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+
+
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(#d7ffec,#ffdcfb);
+    }
+
+    .wrapper{
+        display: block;
+        width: 80%;
+        margin: 0 auto 200px;
+    }
+
+    .navigator {
+
+    }
+
+    div{
+        display: block;
+    }
+    .navigator ul li{
+        padding: 5px;
+        background: #ffc9e9;
+        float: left;
+        font-weight: bold;
+        cursor: pointer;
+        border:1px solid black;
+    }
+
+    .dropbtn
+    {
+        display: none;
+    }
+
+    .navigator ul li:hover
+    {
+        background: #ff5cd0;
+    }
+
+    .selected{
+        background: #ff5cd0;
+    }
+
+    .notSelected
+    {
+        background: #ffc9e9;
+    }
+    ul,li{
+        list-style: none;
+    }
+
+    .header {
+
+        background: #bbbdff url("images/header-background.jpg") no-repeat;
+        background-size: 100% 100%;
+        height: 200px;
+    }
+
+
+    .display-inline-block
+    {
+        display: inline-block;
+    }
+
+    .category
+    {
+
+        border: 3px solid crimson;
+        border-radius: 10px;
+        background: teal;
+        width: 14%;
+        height: 200px;
+        padding: 10px;
+        font-size: 2em;
+        text-align: center;
+        word-wrap: break-word;
+        margin: 20px;
+        color: azure;
+    }
+
+    .middle
+    {
+        text-align: center;
+        margin-top: 100px;
+
+    }
+
+
+
+    .category .name {
+
+        display: block;
+        width: 100%;
+        margin: auto;
+        top: 85px;
+        text-transform: none;
+        letter-spacing: 0;
+        font-size: 1em;
+        font-weight: normal;
+    }
+
+    .category .symbol {
+
+        display: none;
+        left: 10px;
+        top: 0px;
+        font-size: 42px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .category .number {
+
+        display: block;
+        right: 8px;
+        top: 5px;
+    }
+
+    .category .weight {
+
+        float: right;
+        display: block;
+        font-size: 12px;
+    }
+
+    .hide
+    {
+        display: none;
+    }
+
+
+    .alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
+    .alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
+    .lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
+    .actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
+    .transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
+    .post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
+    .metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
+    .diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
+    .halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
+    .noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
+
+    .category-details {
+        color: #AAA;
+
+        border: 3px solid crimson;
+        border-radius: 10px;
+        background: teal;
+        width: 90%;
+        height: auto;
+        padding: 10px;
+        font-size: 1em;
+        text-align: center;
+        word-wrap: break-word;
+        margin: 20px;
+        color: azure;
+    }
+
+    .category-details .small-image{
+        display: none;
+    }
+
+    .category-details .big-image{
+        display: block;
+    }
+
+    .category-details .story{
+        display: block;
+        font-size: 1em;
+        color: gold;
+    }
+
+    .category-details .caption{
+        display: block;
+        font-size: 1.3em;
+        color: chartreuse;
+    }
+
+    .category-details .keywords{
+        display: block;
+        float: left;
+        font-size: 0.9em;
+        color: fuchsia;
+    }
+
+    .category-details .dateNTime{
+        display: block;
+        float: right;
+        font-size: 0.9em;
+        color: #0088FF;
+    }
+
+    .category-details .heading{
+        display: block;
+        font-size: 2em;
+        color: honeydew;
+        text-transform: uppercase;
+    }
+
+    .clear
+    {
+        clear: both;
+    }
+
+    .footer {
+        position: fixed;
+        align-items: baseline;
+        background: #bbbdff;
+        height: 200px;
+    }
+
+    .absolute
+    {
+        position: absolute;
+    }
+
+
+    .item {
+        float: left;
+        text-shadow: 0 1px black;
+    }
+
+
+    .item.next {
+        border: 5px solid black;
+    }
+
+    .isotope-item {
+        z-index: 2;
+    }
+
+    .isotope-hidden.isotope-item {
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    /**** Isotope CSS3 transitions ****/
+
+    .isotope,
+    .isotope .isotope-item {
+        -webkit-transition-duration: 0.8s;
+        -moz-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+    }
+
+    .isotope {
+        -webkit-transition-property: height, width;
+        -moz-transition-property: height, width;
+        transition-property: height, width;
+    }
+
+    .isotope .isotope-item {
+        -webkit-transition-property: -webkit-transform, opacity;
+        -moz-transition-property:    -moz-transform, opacity;
+        transition-property:         transform, opacity;
+    }
+
+    /**** disabling Isotope CSS3 transitions ****/
+
+    .isotope.no-transition,
+    .isotope.no-transition .isotope-item,
+    .isotope .isotope-item.no-transition {
+        -webkit-transition-duration: 0s;
+        -moz-transition-duration: 0s;
+        transition-duration: 0s;
+    }
+
+    /* End: Recommended Isotope styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* app css stylesheet */
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+
+
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(#d7ffec,#ffdcfb);
+    }
+
+    .wrapper{
+        display: block;
+        width: 80%;
+        margin: 0 auto 200px;
+    }
+
+    .navigator {
+
+    }
+
+    div{
+        display: block;
+    }
+    .navigator ul li{
+        padding: 5px;
+        background: #ffc9e9;
+        float: left;
+        font-weight: bold;
+        cursor: pointer;
+        border:1px solid black;
+    }
+
+    .dropbtn
+    {
+        display: none;
+    }
+
+    .navigator ul li:hover
+    {
+        background: #ff5cd0;
+    }
+
+    .selected{
+        background: #ff5cd0;
+    }
+
+    .notSelected
+    {
+        background: #ffc9e9;
+    }
+    ul,li{
+        list-style: none;
+    }
+
+    .header {
+
+        background: #bbbdff url("images/header-background.jpg") no-repeat;
+        background-size: 100% 100%;
+        height: 200px;
+    }
+
+
+    .display-inline-block
+    {
+        display: inline-block;
+    }
+
+    .category
+    {
+
+        border: 3px solid crimson;
+        border-radius: 10px;
+        background: teal;
+        width: 14%;
+        height: 200px;
+        padding: 10px;
+        font-size: 2em;
+        text-align: center;
+        word-wrap: break-word;
+        margin: 20px;
+        color: azure;
+    }
+
+    .middle
+    {
+        text-align: center;
+        margin-top: 100px;
+
+    }
+
+
+
+    .category .name {
+
+        display: block;
+        width: 100%;
+        margin: auto;
+        top: 85px;
+        text-transform: none;
+        letter-spacing: 0;
+        font-size: 1em;
+        font-weight: normal;
+    }
+
+    .category .symbol {
+
+        display: none;
+        left: 10px;
+        top: 0px;
+        font-size: 42px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .category .number {
+
+        display: block;
+        right: 8px;
+        top: 5px;
+    }
+
+    .category .weight {
+
+        float: right;
+        display: block;
+        font-size: 12px;
+    }
+
+    .hide
+    {
+        display: none;
+    }
+
+
+    .alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
+    .alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
+    .lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
+    .actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
+    .transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
+    .post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
+    .metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
+    .diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
+    .halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
+    .noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
+
+    .category-details {
+        color: #AAA;
+
+        border: 3px solid crimson;
+        border-radius: 10px;
+        background: teal;
+        width: 90%;
+        height: auto;
+        padding: 10px;
+        font-size: 1em;
+        text-align: center;
+        word-wrap: break-word;
+        margin: 20px;
+        color: azure;
+    }
+
+    .category-details .small-image{
+        display: none;
+    }
+
+    .category-details .big-image{
+        display: block;
+    }
+
+    .category-details .story{
+        display: block;
+        font-size: 1em;
+        color: gold;
+    }
+
+    .category-details .caption{
+        display: block;
+        font-size: 1.3em;
+        color: chartreuse;
+    }
+
+    .category-details .keywords{
+        display: block;
+        float: left;
+        font-size: 0.9em;
+        color: fuchsia;
+    }
+
+    .category-details .dateNTime{
+        display: block;
+        float: right;
+        font-size: 0.9em;
+        color: #0088FF;
+    }
+
+    .category-details .heading{
+        display: block;
+        font-size: 2em;
+        color: honeydew;
+        text-transform: uppercase;
+    }
+
+    .clear
+    {
+        clear: both;
+    }
+
+    .footer {
+        position: fixed;
+        align-items: baseline;
+        background: #bbbdff;
+        height: 200px;
+    }
+
+    .absolute
+    {
+        position: absolute;
+    }
+
+
+    .item {
+        float: left;
+        text-shadow: 0 1px black;
+    }
+
+
+    .item.next {
+        border: 5px solid black;
+    }
+
+    .isotope-item {
+        z-index: 2;
+    }
+
+    .isotope-hidden.isotope-item {
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    /**** Isotope CSS3 transitions ****/
+
+    .isotope,
+    .isotope .isotope-item {
+        -webkit-transition-duration: 0.8s;
+        -moz-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+    }
+
+    .isotope {
+        -webkit-transition-property: height, width;
+        -moz-transition-property: height, width;
+        transition-property: height, width;
+    }
+
+    .isotope .isotope-item {
+        -webkit-transition-property: -webkit-transform, opacity;
+        -moz-transition-property:    -moz-transform, opacity;
+        transition-property:         transform, opacity;
+    }
+
+    /**** disabling Isotope CSS3 transitions ****/
+
+    .isotope.no-transition,
+    .isotope.no-transition .isotope-item,
+    .isotope .isotope-item.no-transition {
+        -webkit-transition-duration: 0s;
+        -moz-transition-duration: 0s;
+        transition-duration: 0s;
+    }
+
+    /* End: Recommended Isotope styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* app css stylesheet */
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+
+
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(#d7ffec,#ffdcfb);
+    }
+
+    .wrapper{
+        display: block;
+        width: 80%;
+        margin: 0 auto 200px;
+    }
+
+    .navigator {
+
+    }
+
+    div{
+        display: block;
+    }
+    .navigator ul li{
+        padding: 5px;
+        background: #ffc9e9;
+        float: left;
+        font-weight: bold;
+        cursor: pointer;
+        border:1px solid black;
+    }
+
+    .dropbtn
+    {
+        display: none;
+    }
+
+    .navigator ul li:hover
+    {
+        background: #ff5cd0;
+    }
+
+    .selected{
+        background: #ff5cd0;
+    }
+
+    .notSelected
+    {
+        background: #ffc9e9;
+    }
+    ul,li{
+        list-style: none;
+    }
+
+    .header {
+
+        background: #bbbdff url("images/header-background.jpg") no-repeat;
+        background-size: 100% 100%;
+        height: 200px;
+    }
+
+
+    .display-inline-block
+    {
+        display: inline-block;
+    }
+
+    .category
+    {
+
+        border: 3px solid crimson;
+        border-radius: 10px;
+        background: teal;
+        width: 14%;
+        height: 200px;
+        padding: 10px;
+        font-size: 2em;
+        text-align: center;
+        word-wrap: break-word;
+        margin: 20px;
+        color: azure;
+    }
+
+    .middle
+    {
+        text-align: center;
+        margin-top: 100px;
+
+    }
+
+
+
+    .category .name {
+
+        display: block;
+        width: 100%;
+        margin: auto;
+        top: 85px;
+        text-transform: none;
+        letter-spacing: 0;
+        font-size: 1em;
+        font-weight: normal;
+    }
+
+    .category .symbol {
+
+        display: none;
+        left: 10px;
+        top: 0px;
+        font-size: 42px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .category .number {
+
+        display: block;
+        right: 8px;
+        top: 5px;
+    }
+
+    .category .weight {
+
+        float: right;
+        display: block;
+        font-size: 12px;
+    }
+
+    .hide
+    {
+        display: none;
+    }
+
+
+    .alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
+    .alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
+    .lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
+    .actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
+    .transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
+    .post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
+    .metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
+    .diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
+    .halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
+    .noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
+
+    .category-details {
+        color: #AAA;
+
+        border: 3px solid crimson;
+        border-radius: 10px;
+        background: teal;
+        width: 90%;
+        height: auto;
+        padding: 10px;
+        font-size: 1em;
+        text-align: center;
+        word-wrap: break-word;
+        margin: 20px;
+        color: azure;
+    }
+
+    .category-details .small-image{
+        display: none;
+    }
+
+    .category-details .big-image{
+        display: block;
+    }
+
+    .category-details .story{
+        display: block;
+        font-size: 1em;
+        color: gold;
+    }
+
+    .category-details .caption{
+        display: block;
+        font-size: 1.3em;
+        color: chartreuse;
+    }
+
+    .category-details .keywords{
+        display: block;
+        float: left;
+        font-size: 0.9em;
+        color: fuchsia;
+    }
+
+    .category-details .dateNTime{
+        display: block;
+        float: right;
+        font-size: 0.9em;
+        color: #0088FF;
+    }
+
+    .category-details .heading{
+        display: block;
+        font-size: 2em;
+        color: honeydew;
+        text-transform: uppercase;
+    }
+
+    .clear
+    {
+        clear: both;
+    }
+
+    .footer {
+        position: fixed;
+        align-items: baseline;
+        background: #bbbdff;
+        height: 200px;
+    }
+
+    .absolute
+    {
+        position: absolute;
+    }
+
+
+    .item {
+        float: left;
+        text-shadow: 0 1px black;
+    }
+
+
+    .item.next {
+        border: 5px solid black;
+    }
+
+    .isotope-item {
+        z-index: 2;
+    }
+
+    .isotope-hidden.isotope-item {
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    /**** Isotope CSS3 transitions ****/
+
+    .isotope,
+    .isotope .isotope-item {
+        -webkit-transition-duration: 0.8s;
+        -moz-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+    }
+
+    .isotope {
+        -webkit-transition-property: height, width;
+        -moz-transition-property: height, width;
+        transition-property: height, width;
+    }
+
+    .isotope .isotope-item {
+        -webkit-transition-property: -webkit-transform, opacity;
+        -moz-transition-property:    -moz-transform, opacity;
+        transition-property:         transform, opacity;
+    }
+
+    /**** disabling Isotope CSS3 transitions ****/
+
+    .isotope.no-transition,
+    .isotope.no-transition .isotope-item,
+    .isotope .isotope-item.no-transition {
+        -webkit-transition-duration: 0s;
+        -moz-transition-duration: 0s;
+        transition-duration: 0s;
+    }
+
+    /* End: Recommended Isotope styles */
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    /* app css stylesheet */
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+
+
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(#d7ffec,#ffdcfb);
+    }
+
+    .wrapper{
+        display: block;
+        width: 80%;
+        margin: 0 auto 200px;
+    }
+
+    .navigator {
+
+    }
+
+    div{
+        display: block;
+    }
+    .navigator ul li{
+        padding: 5px;
+        background: #ffc9e9;
+        float: left;
+        font-weight: bold;
+        cursor: pointer;
+        border:1px solid black;
+    }
+
+    .dropbtn
+    {
+        display: none;
+    }
+
+    .navigator ul li:hover
+    {
+        background: #ff5cd0;
+    }
+
+    .selected{
+        background: #ff5cd0;
+    }
+
+    .notSelected
+    {
+        background: #ffc9e9;
+    }
+    ul,li{
+        list-style: none;
+    }
+
+    .header {
+
+        background: #bbbdff url("images/header-background.jpg") no-repeat;
+        background-size: 100% 100%;
+        height: 200px;
+    }
+
+
+    .display-inline-block
+    {
+        display: inline-block;
+    }
+
+    .category
+    {
+
+        border: 3px solid crimson;
+        border-radius: 10px;
+        background: teal;
+        width: 14%;
+        height: 200px;
+        padding: 10px;
+        font-size: 2em;
+        text-align: center;
+        word-wrap: break-word;
+        margin: 20px;
+        color: azure;
+    }
+
+    .middle
+    {
+        text-align: center;
+        margin-top: 100px;
+
+    }
+
+
+
+    .category .name {
+
+        display: block;
+        width: 100%;
+        margin: auto;
+        top: 85px;
+        text-transform: none;
+        letter-spacing: 0;
+        font-size: 1em;
+        font-weight: normal;
+    }
+
+    .category .symbol {
+
+        display: none;
+        left: 10px;
+        top: 0px;
+        font-size: 42px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .category .number {
+
+        display: block;
+        right: 8px;
+        top: 5px;
+    }
+
+    .category .weight {
+
+        float: right;
+        display: block;
+        font-size: 12px;
+    }
+
+    .hide
+    {
+        display: none;
+    }
+
+
+    .alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
+    .alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
+    .lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
+    .actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
+    .transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
+    .post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
+    .metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
+    .diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
+    .halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
+    .noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
+
+    .category-details {
+        color: #AAA;
+
+        border: 3px solid crimson;
+        border-radius: 10px;
+        background: teal;
+        width: 90%;
+        height: auto;
+        padding: 10px;
+        font-size: 1em;
+        text-align: center;
+        word-wrap: break-word;
+        margin: 20px;
+        color: azure;
+    }
+
+    .category-details .small-image{
+        display: none;
+    }
+
+    .category-details .big-image{
+        display: block;
+    }
+
+    .category-details .story{
+        display: block;
+        font-size: 1em;
+        color: gold;
+    }
+
+    .category-details .caption{
+        display: block;
+        font-size: 1.3em;
+        color: chartreuse;
+    }
+
+    .category-details .keywords{
+        display: block;
+        float: left;
+        font-size: 0.9em;
+        color: fuchsia;
+    }
+
+    .category-details .dateNTime{
+        display: block;
+        float: right;
+        font-size: 0.9em;
+        color: #0088FF;
+    }
+
+    .category-details .heading{
+        display: block;
+        font-size: 2em;
+        color: honeydew;
+        text-transform: uppercase;
+    }
+
+    .clear
+    {
+        clear: both;
+    }
+
+    .footer {
+        position: fixed;
+        align-items: baseline;
+        background: #bbbdff;
+        height: 200px;
+    }
+
+    .absolute
+    {
+        position: absolute;
+    }
+
+
+    .item {
+        float: left;
+        text-shadow: 0 1px black;
+    }
+
+
+    .item.next {
+        border: 5px solid black;
+    }
+
+    .isotope-item {
+        z-index: 2;
+    }
+
+    .isotope-hidden.isotope-item {
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    /**** Isotope CSS3 transitions ****/
+
+    .isotope,
+    .isotope .isotope-item {
+        -webkit-transition-duration: 0.8s;
+        -moz-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+    }
+
+    .isotope {
+        -webkit-transition-property: height, width;
+        -moz-transition-property: height, width;
+        transition-property: height, width;
+    }
+
+    .isotope .isotope-item {
+        -webkit-transition-property: -webkit-transform, opacity;
+        -moz-transition-property:    -moz-transform, opacity;
+        transition-property:         transform, opacity;
+    }
+
+    /**** disabling Isotope CSS3 transitions ****/
+
+    .isotope.no-transition,
+    .isotope.no-transition .isotope-item,
+    .isotope .isotope-item.no-transition {
+        -webkit-transition-duration: 0s;
+        -moz-transition-duration: 0s;
+        transition-duration: 0s;
+    }
+
+    /* End: Recommended Isotope styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    /* app css stylesheet */
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+
+
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(#d7ffec,#ffdcfb);
+    }
+
+    .wrapper{
+        display: block;
+        width: 80%;
+        margin: 0 auto 200px;
+    }
+
+    .navigator {
+
+    }
+
+    div{
+        display: block;
+    }
+    .navigator ul li{
+        padding: 5px;
+        background: #ffc9e9;
+        float: left;
+        font-weight: bold;
+        cursor: pointer;
+        border:1px solid black;
+    }
+
+    .dropbtn
+    {
+        display: none;
+    }
+
+    .navigator ul li:hover
+    {
+        background: #ff5cd0;
+    }
+
+    .selected{
+        background: #ff5cd0;
+    }
+
+    .notSelected
+    {
+        background: #ffc9e9;
+    }
+    ul,li{
+        list-style: none;
+    }
+
+    .header {
+
+        background: #bbbdff url("images/header-background.jpg") no-repeat;
+        background-size: 100% 100%;
+        height: 200px;
+    }
+
+
+    .display-inline-block
+    {
+        display: inline-block;
+    }
+
+    .category
+    {
+
+        border: 3px solid crimson;
+        border-radius: 10px;
+        background: teal;
+        width: 14%;
+        height: 200px;
+        padding: 10px;
+        font-size: 2em;
+        text-align: center;
+        word-wrap: break-word;
+        margin: 20px;
+        color: azure;
+    }
+
+    .middle
+    {
+        text-align: center;
+        margin-top: 100px;
+
+    }
+
+
+
+    .category .name {
+
+        display: block;
+        width: 100%;
+        margin: auto;
+        top: 85px;
+        text-transform: none;
+        letter-spacing: 0;
+        font-size: 1em;
+        font-weight: normal;
+    }
+
+    .category .symbol {
+
+        display: none;
+        left: 10px;
+        top: 0px;
+        font-size: 42px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .category .number {
+
+        display: block;
+        right: 8px;
+        top: 5px;
+    }
+
+    .category .weight {
+
+        float: right;
+        display: block;
+        font-size: 12px;
+    }
+
+    .hide
+    {
+        display: none;
+    }
+
+
+    .alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
+    .alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
+    .lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
+    .actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
+    .transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
+    .post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
+    .metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
+    .diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
+    .halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
+    .noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
+
+    .category-details {
+        color: #AAA;
+
+        border: 3px solid crimson;
+        border-radius: 10px;
+        background: teal;
+        width: 90%;
+        height: auto;
+        padding: 10px;
+        font-size: 1em;
+        text-align: center;
+        word-wrap: break-word;
+        margin: 20px;
+        color: azure;
+    }
+
+    .category-details .small-image{
+        display: none;
+    }
+
+    .category-details .big-image{
+        display: block;
+    }
+
+    .category-details .story{
+        display: block;
+        font-size: 1em;
+        color: gold;
+    }
+
+    .category-details .caption{
+        display: block;
+        font-size: 1.3em;
+        color: chartreuse;
+    }
+
+    .category-details .keywords{
+        display: block;
+        float: left;
+        font-size: 0.9em;
+        color: fuchsia;
+    }
+
+    .category-details .dateNTime{
+        display: block;
+        float: right;
+        font-size: 0.9em;
+        color: #0088FF;
+    }
+
+    .category-details .heading{
+        display: block;
+        font-size: 2em;
+        color: honeydew;
+        text-transform: uppercase;
+    }
+
+    .clear
+    {
+        clear: both;
+    }
+
+    .footer {
+        position: fixed;
+        align-items: baseline;
+        background: #bbbdff;
+        height: 200px;
+    }
+
+    .absolute
+    {
+        position: absolute;
+    }
+
+
+    .item {
+        float: left;
+        text-shadow: 0 1px black;
+    }
+
+
+    .item.next {
+        border: 5px solid black;
+    }
+
+    .isotope-item {
+        z-index: 2;
+    }
+
+    .isotope-hidden.isotope-item {
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    /**** Isotope CSS3 transitions ****/
+
+    .isotope,
+    .isotope .isotope-item {
+        -webkit-transition-duration: 0.8s;
+        -moz-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+    }
+
+    .isotope {
+        -webkit-transition-property: height, width;
+        -moz-transition-property: height, width;
+        transition-property: height, width;
+    }
+
+    .isotope .isotope-item {
+        -webkit-transition-property: -webkit-transform, opacity;
+        -moz-transition-property:    -moz-transform, opacity;
+        transition-property:         transform, opacity;
+    }
+
+    /**** disabling Isotope CSS3 transitions ****/
+
+    .isotope.no-transition,
+    .isotope.no-transition .isotope-item,
+    .isotope .isotope-item.no-transition {
+        -webkit-transition-duration: 0s;
+        -moz-transition-duration: 0s;
+        transition-duration: 0s;
+    }
+
+    /* End: Recommended Isotope styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+    /* app css stylesheet */
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+
+
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(#d7ffec,#ffdcfb);
+    }
+
+    .wrapper{
+        display: block;
+        width: 80%;
+        margin: 0 auto 200px;
+    }
+
+    .navigator {
+
+    }
+
+    div{
+        display: block;
+    }
+    .navigator ul li{
+        padding: 5px;
+        background: #ffc9e9;
+        float: left;
+        font-weight: bold;
+        cursor: pointer;
+        border:1px solid black;
+    }
+
+    .dropbtn
+    {
+        display: none;
+    }
+
+    .navigator ul li:hover
+    {
+        background: #ff5cd0;
+    }
+
+    .selected{
+        background: #ff5cd0;
+    }
+
+    .notSelected
+    {
+        background: #ffc9e9;
+    }
+    ul,li{
+        list-style: none;
+    }
+
+    .header {
+
+        background: #bbbdff url("images/header-background.jpg") no-repeat;
+        background-size: 100% 100%;
+        height: 200px;
+    }
+
+
+    .display-inline-block
+    {
+        display: inline-block;
+    }
+
+    .category
+    {
+
+        border: 3px solid crimson;
+        border-radius: 10px;
+        background: teal;
+        width: 14%;
+        height: 200px;
+        padding: 10px;
+        font-size: 2em;
+        text-align: center;
+        word-wrap: break-word;
+        margin: 20px;
+        color: azure;
+    }
+
+    .middle
+    {
+        text-align: center;
+        margin-top: 100px;
+
+    }
+
+
+
+    .category .name {
+
+        display: block;
+        width: 100%;
+        margin: auto;
+        top: 85px;
+        text-transform: none;
+        letter-spacing: 0;
+        font-size: 1em;
+        font-weight: normal;
+    }
+
+    .category .symbol {
+
+        display: none;
+        left: 10px;
+        top: 0px;
+        font-size: 42px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .category .number {
+
+        display: block;
+        right: 8px;
+        top: 5px;
+    }
+
+    .category .weight {
+
+        float: right;
+        display: block;
+        font-size: 12px;
+    }
+
+    .hide
+    {
+        display: none;
+    }
+
+
+    .alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
+    .alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
+    .lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
+    .actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
+    .transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
+    .post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
+    .metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
+    .diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
+    .halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
+    .noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
+
+    .category-details {
+        color: #AAA;
+
+        border: 3px solid crimson;
+        border-radius: 10px;
+        background: teal;
+        width: 90%;
+        height: auto;
+        padding: 10px;
+        font-size: 1em;
+        text-align: center;
+        word-wrap: break-word;
+        margin: 20px;
+        color: azure;
+    }
+
+    .category-details .small-image{
+        display: none;
+    }
+
+    .category-details .big-image{
+        display: block;
+    }
+
+    .category-details .story{
+        display: block;
+        font-size: 1em;
+        color: gold;
+    }
+
+    .category-details .caption{
+        display: block;
+        font-size: 1.3em;
+        color: chartreuse;
+    }
+
+    .category-details .keywords{
+        display: block;
+        float: left;
+        font-size: 0.9em;
+        color: fuchsia;
+    }
+
+    .category-details .dateNTime{
+        display: block;
+        float: right;
+        font-size: 0.9em;
+        color: #0088FF;
+    }
+
+    .category-details .heading{
+        display: block;
+        font-size: 2em;
+        color: honeydew;
+        text-transform: uppercase;
+    }
+
+    .clear
+    {
+        clear: both;
+    }
+
+    .footer {
+        position: fixed;
+        align-items: baseline;
+        background: #bbbdff;
+        height: 200px;
+    }
+
+    .absolute
+    {
+        position: absolute;
+    }
+
+
+    .item {
+        float: left;
+        text-shadow: 0 1px black;
+    }
+
+
+    .item.next {
+        border: 5px solid black;
+    }
+
+    .isotope-item {
+        z-index: 2;
+    }
+
+    .isotope-hidden.isotope-item {
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    /**** Isotope CSS3 transitions ****/
+
+    .isotope,
+    .isotope .isotope-item {
+        -webkit-transition-duration: 0.8s;
+        -moz-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+    }
+
+    .isotope {
+        -webkit-transition-property: height, width;
+        -moz-transition-property: height, width;
+        transition-property: height, width;
+    }
+
+    .isotope .isotope-item {
+        -webkit-transition-property: -webkit-transform, opacity;
+        -moz-transition-property:    -moz-transform, opacity;
+        transition-property:         transform, opacity;
+    }
+
+    /**** disabling Isotope CSS3 transitions ****/
+
+    .isotope.no-transition,
+    .isotope.no-transition .isotope-item,
+    .isotope .isotope-item.no-transition {
+        -webkit-transition-duration: 0s;
+        -moz-transition-duration: 0s;
+        transition-duration: 0s;
+    }
+
+    /* End: Recommended Isotope styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    .wrapper{
+        display: block;
+        width: 80%;
+        margin: 0 auto 200px;
+    }
+
+    .navigator {
+
+    }
+
+    div{
+        display: block;
+    }
+
+    .navigator ul li{
+        float: none;
+        width: 385px;
+    }
+
+    .header {
+        background: #bbbdff url("../images/icon.jpg") no-repeat;
+        background-size: 100% 100%;
+        height: 100px;
+    }
+
+    .category-details .small-image{
+        display: block;
+    }
+
+    .category-details .big-image{
+        display: none;
+    }
+
+    .category-details .story{
+        display: block;
+        font-size: 0.9em;
+        color: gold;
+    }
+
+    .category-details .caption{
+        display: block;
+        font-size: 1em;
+        color: chartreuse;
+    }
+
+    .category-details .keywords{
+        display: block;
+        float: left;
+        font-size: 0.6em;
+        color: fuchsia;
+    }
+
+    .category-details .dateNTime{
+        display: block;
+        float: right;
+        font-size: 0.6em;
+        color: #0088FF;
+    }
+
+    .category-details .heading{
+        display: block;
+        font-size: 1.2em;
+        color: honeydew;
+        text-transform: uppercase;
+    }
+
+    .clear
+    {
+        clear: both;
+    }
+
+    .footer {
+        background: #bbbdff;
+        height: 200px;
+    }
+
+    .absolute
+    {
+        position: absolute;
+    }
+
+    .dropbtn {
+        background-color: #4CAF50;
+        display: block;
+        color: white;
+        width: 365px;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .dropdown-content li {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content li:hover {
+        background: #ff5cd0;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    /* Styles */
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+}
