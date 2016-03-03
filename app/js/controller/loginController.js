@@ -5,7 +5,10 @@
     'use strict';
     angular.module('glNewsApp').controller('loginController', ['$scope', '$location', function ($scope, $location) {
 
-        var ref,usersRef,usersData,userUpdate;
+        var ref;//declared for reference of firebase.
+        var usersRef;//declared for  reference of users saved in firebase data.
+        var usersData;////declaring variable for user data.
+        var userUpdate;//declared for getting snapshot of data .
 
         //getting reference of firebase database
          ref = new Firebase("https://gl-newsapidata.firebaseio.com/web/saving-data/fireblog");

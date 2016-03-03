@@ -2,7 +2,7 @@
 
 // Declare app level module which depends on views, and components
 angular.module('glNewsApp', [
-    'ngRoute', 'ngDraggable','dndLists','ngAnimate', 'ui.bootstrap'
+    'ngRoute', 'dndLists','ngAnimate', 'ui.bootstrap'
 ]).
     config(['$routeProvider', function ($routeProvider) {
         $routeProvider

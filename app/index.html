@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <!--[if lt IE 7]>
-<html lang="en" ng-app="glNewsApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<html lang="en" ng-app="glNewsApp" ng-class="htmlScrollBar" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>
-<html lang="en" ng-app="glNewsApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<html lang="en" ng-app="glNewsApp" ng-class="htmlScrollBar" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>
-<html lang="en" ng-app="glNewsApp" class="no-js lt-ie9"> <![endif]-->
+<html lang="en" ng-app="glNewsApp" ng-class="htmlScrollBar" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html lang="en" ng-app="glNewsApp" class="no-js"> <!--<![endif]-->
+<html lang="en" ng-app="glNewsApp" class="no-js" ng-class="htmlScrollBar"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,7 +28,7 @@
     <script src="js/script.js"></script>
 
 </head>
-<body ng-init="menuListShow=1 ; overlayShow = 0; " style="background-image: url('images/bg-image.jpg'); background-size: cover;">
+<body ng-init="menuListShow=1 ; overlayShow = 0; ">
 <section id="container">
 
     <!-- **********************************************************************************************************************************************************

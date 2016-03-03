@@ -2,9 +2,20 @@
  * Created by narayan.reddy on 20-02-2016.
  */
 (function () {
-    angular.module('glNewsApp').controller('dashboardController', ['$scope', '$location', '$http', 'CategoryDetails', 'getCategoryDetails', 'CategoriesSelectedService', 'Categories', '$q', '$timeout', '$interval','$uibModal', function ($scope, $location, $http, CategoryDetails, getCategoryDetails, CategoriesSelectedService, Categories, $q, $timeout, $interval,$uibModal) {
+    angular.module('glNewsApp').controller('dashboardController', ['$scope', '$location', '$http', '$q', '$timeout', '$interval', '$uibModal', 'CategoryDetails', 'getCategoryDetails', 'CategoriesSelectedService', 'Categories', function ($scope, $location, $http, $q, $timeout, $interval, $uibModal, CategoryDetails, getCategoryDetails, CategoriesSelectedService, Categories) {
 
-        var ref,usersRef,usersData,userUpdate,userName,selectedItems,selectedItemUrl,favList,favListArray, favListArrayURL,favListArrayURLRequest,favListScroller;
+        var ref;//declared for reference of firebase.
+        var usersRef;//declared for  reference of users saved in firebase data.
+        var usersData;////declaring variable for user data.
+        var userUpdate;//declared for getting snapshot of data .
+        var userName;//declared for getting current user name.
+        var selectedItems;//selectedItems selected by user.
+        var selectedItemUrl;//getting url of selectedItem
+        var favList;//declared for favourite List
+        var favListArray;//selected favourite list in array
+        var favListArrayURL;//favouritelist url in array.
+        var favListArrayURLRequest;
+        var favListScroller;
 
         //code checks for any exist user if no it's redirect to login page
         if (!localStorage.getItem('userName')) {
@@ -15,16 +26,16 @@
         $scope.firstTime = {'display': 'none'};
 
         //getting reference of firebase database
-         ref = new Firebase("https://gl-newsapidata.firebaseio.com/web/saving-data/fireblog/posts");
+        ref = new Firebase("https://gl-newsapidata.firebaseio.com/web/saving-data/fireblog/posts");
 
         //getting child for particular ref
-         usersRef = ref.child("users");
+        usersRef = ref.child("users");
 
         //declaring variable for user data
-         usersData;
+        usersData;
 
         //getting snapshot of data in firebase
-         userUpdate = usersRef.on('value', function (snapshot) {
+        userUpdate = usersRef.on('value', function (snapshot) {
             usersData = snapshot.val();
         });
 
@@ -32,13 +43,15 @@
         $scope.loadingData = {'display': 'block'};
 
         //getting userName from localStorage
-         userName = localStorage.getItem('userName');
+        userName = localStorage.getItem('userName');
 
         //setting userName to scope variable
         $scope.userName = userName;
 
-        $('html').removeClass('modelOverflow');
-         selectedItems = '';
+        $scope.htmlScrollBar='modelOverflow';
+        //$('html').removeClass('modelOverflow');
+
+        selectedItems = '';
 
         //getting selected category list from localStorage
         selectedItems = localStorage.getItem('selectedItems');
@@ -101,9 +114,9 @@
                 url: "http://mfeeds.timesofindia.indiatimes.com/Feeds/jsonfeed?newsid=2277129&format=simplejson"
             }];
 
-       // var userNAme = localStorage.getItem("userName");
+        // var userNAme = localStorage.getItem("userName");
 
-         selectedItemUrl = [];
+        selectedItemUrl = [];
 
 
         //getting data of breaking news
@@ -139,40 +152,46 @@
                 var all = $q.all(urList);
                 all.then(success);
                 var newItems = [];//getting one category details in array
-                var newItemsList=[];//getting all category details in one single array for scrolling ..
+                var newItemsList = [];//getting all category details in one single array for scrolling ..
 
                 //checking for any update in news category detail changes in very 5 minutes
                 $interval(function () {
                     var all = $q.all(urList);
                     all.then(success);
                     newItems = [];
-                    newItemsList=[];
+                    newItemsList = [];
                 }, 300000);
 
 
                 function success(data) {
                     for (var i = 0; i < data.length; i++) {
                         newItems.push({category: selectedItemArray[i], NewsItem: data[i].data.NewsItem});
-                        if(data[i].data.NewsItem.length>0){
-                            for(var newsItemListNumber=0;newsItemListNumber<data[i].data.NewsItem.length;newsItemListNumber++){
+                        if (data[i].data.NewsItem.length > 0) {
+                            for (var newsItemListNumber = 0; newsItemListNumber < data[i].data.NewsItem.length; newsItemListNumber++) {
                                 newItemsList.push(data[i].data.NewsItem[newsItemListNumber]);
                             }
                         }
-                        else{
-                            data[i].data.NewsItem[newsItemListNumber]=[{HeadLine: "News id does not exists ",DateLine: "News id does not exists ",KeyWords:"News id does not exists ",Caption:"News id does not exists ",Story:"News id does not exists "}];
+                        else {
+                            data[i].data.NewsItem[newsItemListNumber] = [{
+                                HeadLine: "News id does not exists ",
+                                DateLine: "News id does not exists ",
+                                KeyWords: "News id does not exists ",
+                                Caption: "News id does not exists ",
+                                Story: "News id does not exists "
+                            }];
                             newItemsList.push(data[i].data.NewsItem[newsItemListNumber]);
                         }
 
                         $scope.loadingData = {'display': 'none'};
                     }
                     $scope.selectedCategoriesNewsDetails = newItems;
-                    $scope.seletedItemsScroll=newItemsList;
+                    $scope.seletedItemsScroll = newItemsList;
 
                 }
 
 
                 $scope.selectedCategoriesNewsDetails = newItems;
-                $scope.seletedItemsScroll=newItemsList;
+                $scope.seletedItemsScroll = newItemsList;
 
             }
             else {
@@ -186,7 +205,7 @@
         }
         else {
             $scope.firstTime = {'display': 'block'};
-            $scope.loadingData={'display':'none'};
+            $scope.loadingData = {'display': 'none'};
 
             //$(document).ready(function () {
             //    $('#firstUserModel').foundation('reveal', 'open')
@@ -196,63 +215,37 @@
 
 
         //declaring variable for selected favourite list
-         favList = [];
-        favListArrayURL=[];
-        $scope.favouriteSelection=function(selectedCategory,newsItems){
+        favList = [];
+        favListArrayURL = [];
+        $scope.favouriteSelection = function (selectedCategory, newsItems) {
 
 
-            if ($('#'+selectedCategory).is(':checked') ) {
+            if ($('#' + selectedCategory).is(':checked')) {
                 favList.push(selectedCategory);
-                for(var i=0;i<newsItems.length;i++){
+                for (var i = 0; i < newsItems.length; i++) {
                     favListArrayURL.push(newsItems[i]);
                 }
                 console.log(favList);
                 console.log(favListArrayURL);
-                $scope.seletedItemsScroll=favListArrayURL;
+                $scope.seletedItemsScroll = favListArrayURL;
             } else {
-                favList.splice(favList.indexOf(selectedCategory),1);
-                for(var i=0;i<newsItems.length;i++)
-                {
-                    favListArrayURL.splice(favListArrayURL.indexOf(newsItems[i]),1);
+                favList.splice(favList.indexOf(selectedCategory), 1);
+                for (var i = 0; i < newsItems.length; i++) {
+                    favListArrayURL.splice(favListArrayURL.indexOf(newsItems[i]), 1);
                 }
 
                 console.log(favList);
                 console.log(favListArrayURL);
-                $scope.seletedItemsScroll=favListArrayURL;
+                $scope.seletedItemsScroll = favListArrayURL;
             }
 
         };
 
-         favListArray=[];
-         favListArrayURL=[];
-         favListArrayURLRequeset=[];
+        favListArray = [];
+        favListArrayURL = [];
+        favListArrayURLRequeset = [];
 
-        /**
-         * @name favListScroller
-         * @desc fetching favourite categoires details
-         * @param [] object
-         * @returns [] object
-         */
-        // favListScroller=function(favList){
-        //    favListArray=[];
-        //    for(var i=0;i<favList.length;i++){
-        //        favListArray.push(favList[i][0]);
-        //        favListArrayURL.push(CategoriesList[favList[i][0]].url)
-        //
-        //    }
-        //    for(var i=0;i<favListArrayURL.length;i++){
-        //        favListArrayURLRequset.push(getCategoryDetails.promise(favListArrayURL[i].url))
-        //    }
-        //
-        //
-        //}
 
-        /**
-         * @name loginForm
-         * @desc clear localstorage data and redirect to login page
-         * @param
-         * @returns
-         */
         $scope.loginForm = function () {
             localStorage.clear()
             $location.path('/login');
@@ -267,8 +260,7 @@
          * @param
          * @returns
          */
-        $scope.closeModal=function()
-        {
+        $scope.closeModal = function () {
             $('html').removeClass('modelOverflow');
         }
 
@@ -281,7 +273,6 @@
         $scope.showOverlay = function (categoryLink2) {
             $scope.categoryLink = categoryLink2;
             $('html').addClass('modelOverflow');
-
 
 
             if (!$scope.categoryLink.Photo) {

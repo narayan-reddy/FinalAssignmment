@@ -2,10 +2,17 @@
  * Created by narayan.reddy on 23-02-2016.
  */
 (function () {
-    angular.module('glNewsApp').controller('editDashboardController2', ['$scope', '$location', '$http', 'CategoryDetails', 'getCategoryDetails', 'CategoriesSelectedService', 'Categories', '$q', '$timeout', function ($scope, $location, $http, CategoryDetails, getCategoryDetails, CategoriesSelectedService, Categories, $q, $timeout) {
+    angular.module('glNewsApp').controller('editDashboardController2', ['$scope', '$location', '$http', '$q', '$timeout', 'CategoryDetails', 'getCategoryDetails', 'CategoriesSelectedService', 'Categories', function ($scope, $location, $http, $q, $timeout, CategoryDetails, getCategoryDetails, CategoriesSelectedService, Categories) {
 
 
-        var ref, usersRef, CategoriesListMain, CategoriesList, selectedItemUrl, CategoryList3, selectedCategoryString, selectedItemArray;
+        var ref;//declared for reference of firebase.
+        var usersRef;//declared for  reference of users saved in firebase data.
+        var CategoriesListMain;//
+        var CategoriesList;
+        var selectedItemUrl;
+        var CategoryList3;
+        var selectedCategoryString;
+        var selectedItemArray;
 
         //code checks for any exist user if no it's redirect to login page
         if (!localStorage.getItem('userName')) {
